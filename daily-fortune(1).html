@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>每日运势播报</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #fff;
+        }
+        .container { max-width: 600px; margin: 0 auto; }
+        h1 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #ffd700, #ff8c00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .date { text-align: center; color: #888; margin-bottom: 30px; }
+        
+        .section {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .section h2 { font-size: 18px; margin-bottom: 15px; color: #ffd700; }
+        
+        .stock { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .stock:last-child { border-bottom: none; }
+        .stock-name { font-weight: bold; }
+        .stock-price { font-size: 20px; }
+        .stock-change { padding: 4px 10px; border-radius: 6px; font-size: 14px; }
+        .up { background: #f44336; color: #fff; }
+        .down { background: #4caf50; color: #fff; }
+        .flat { background: #888; color: #fff; }
+        
+        .fortune { line-height: 1.8; }
+        .fortune p { margin-bottom: 10px; }
+        .highlight { color: #ffd700; }
+        
+        .update-time { text-align: center; color: #666; font-size: 12px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🐲 每日运势播报</h1>
+        <p class="date">2026年2月25日 · 乙巳年丙寅月壬寅日</p>
+        
+        <div class="section">
+            <h2>📈 股票行情</h2>
+            <div class="stock">
+                <span class="stock-name">智谱 (02513.HK)</span>
+                <span class="stock-price">571.00</span>
+                <span class="stock-change down">-9.08%</span>
+            </div>
+            <div class="stock">
+                <span class="stock-name">minimax (00100.HK)</span>
+                <span class="stock-price">760.50</span>
+                <span class="stock-change down">-13.58%</span>
+            </div>
+            <div class="stock">
+                <span class="stock-name">小米集团 (01810.HK)</span>
+                <span class="stock-price">35.56</span>
+                <span class="stock-change down">-0.50%</span>
+            </div>
+            <p class="update-time">更新时间: 13:57</p>
+        </div>
+        
+        <div class="section">
+            <h2>🔮 八字运势</h2>
+            <div class="fortune">
+                <p><span class="highlight">今日干支：</span>乙巳 · 丙寅 · 壬寅</p>
+                <p><span class="highlight">喜用：</span>金、水</p>
+                <p><span class="highlight">事业：</span>伤官生财月份，项目推进顺利</p>
+                <p><span class="highlight">财运：</span>正财到位，收益稳步增长</p>
+                <p><span class="highlight">健康：</span>注意休息，多喝水保养肾水</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
